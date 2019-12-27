@@ -65,8 +65,9 @@ namespace GraphQL.Server.Internal
                 ComplexityConfiguration = _options.ComplexityConfiguration,
                 EnableMetrics = _options.EnableMetrics,
                 ExposeExceptions = _options.ExposeExceptions,
+                ThrowOnUnhandledException = _options.ThrowOnUnhandledException,
                 FieldNameConverter = _options.FieldNameConverter ?? CamelCaseFieldNameConverter.Instance,
-                UnhandledExceptionDelegate = _options.UnhandledExceptionDelegate, 
+                UnhandledExceptionDelegate = _options.UnhandledExceptionDelegate,
             };
 
             if (opts.EnableMetrics)

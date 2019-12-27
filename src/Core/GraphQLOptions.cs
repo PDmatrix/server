@@ -16,6 +16,8 @@ namespace GraphQL.Server
 
         public bool ExposeExceptions { get; set; }
 
+        public bool ThrowOnUnhandledException { get; set; }
+
         public IFieldNameConverter FieldNameConverter { get; set; }
 
         public Action<UnhandledExceptionContext> UnhandledExceptionDelegate = ctx => { };
